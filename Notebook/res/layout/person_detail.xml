@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <!-- Button to go back to the list of people -->
+
+    <Button
+        android:id="@+id/backDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to the list" />
+
+    <!-- TextViews for the first name -->
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:text="First Name: " />
+
+    <TextView
+        android:id="@+id/firstNameDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="100dp" />
+
+    <!-- TextViews for the last name -->
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="16dp"
+        android:text="Last Name: " />
+
+    <TextView
+        android:id="@+id/lastNameDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstNameDetail"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- TextViews for the phone number -->
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="16dp"
+        android:text="Phone Number: " />
+
+    <TextView
+        android:id="@+id/phoneNumberDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lastNameDetail"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- TextViews for the address -->
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="16dp"
+        android:text="Address: " />
+
+    <TextView
+        android:id="@+id/addressDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneNumberDetail"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:textColor="#0000FF" />
+
+    <!-- TextViews for the date of birth -->
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="16dp"
+        android:text="Date of Birth: " />
+
+    <TextView
+        android:id="@+id/dobDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addressDetail"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Button to edit -->
+
+    <Button
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:text="Edit" />
+
+    <!-- Button to delete -->
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:text="Delete" />
+
+</RelativeLayout>

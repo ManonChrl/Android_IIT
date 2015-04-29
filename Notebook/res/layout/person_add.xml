@@ -1,0 +1,176 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relAdd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <!-- TextView and Editext for the first name -->
+
+    <TextView
+        android:id="@+id/fnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="60dp"
+        android:text="First Name: " />
+
+    <EditText
+        android:id="@+id/firstNameAdd"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fnAdd"
+        android:layout_marginLeft="150dp"
+        android:inputType="textCapSentences" />
+
+    <!-- TextView and Editext for the last name -->
+
+    <TextView
+        android:id="@+id/lnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fnAdd"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:text="Last Name: " />
+
+    <EditText
+        android:id="@+id/lastNameAdd"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lnAdd"
+        android:layout_below="@+id/firstNameAdd"
+        android:layout_marginLeft="150dp"
+        android:inputType="textCapSentences" />
+
+    <!-- TextView and Editext for the phone number -->
+
+    <TextView
+        android:id="@+id/pnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lnAdd"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:text="Phone Number: " />
+
+    <EditText
+        android:id="@+id/phoneNumberAdd"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pnAdd"
+        android:layout_below="@+id/lastNameAdd"
+        android:layout_marginLeft="150dp"
+        android:inputType="phone" />
+
+    <!-- TextView and Editext for the address -->
+
+    <TextView
+        android:id="@+id/addAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pnAdd"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:text="Address: " />
+
+    <EditText
+        android:id="@+id/addressAdd"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/addAdd"
+        android:layout_below="@+id/phoneNumberAdd"
+        android:layout_marginLeft="150dp"
+        android:inputType="textMultiLine" />
+
+    <!-- TextView and Editext for the latitude -->
+
+    <TextView
+        android:id="@+id/latAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addAdd"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="35dp"
+        android:text="Latitude: " />
+
+    <EditText
+        android:id="@+id/latitudeAdd"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/latAdd"
+        android:layout_below="@+id/addressAdd"
+        android:layout_marginLeft="150dp"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <!-- TextView and Editext for the longitude -->
+
+    <TextView
+        android:id="@+id/longiAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/latAdd"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:text="Longitude: " />
+
+    <EditText
+        android:id="@+id/longitudeAdd"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/longiAdd"
+        android:layout_below="@+id/latitudeAdd"
+        android:layout_marginLeft="150dp"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <!-- TextViews and Editext for the date of birth -->
+
+    <TextView
+        android:id="@+id/DOBAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/longiAdd"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:text="Date of Birth:" />
+
+    <TextView
+        android:id="@+id/formatDOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DOBAdd"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="1dp"
+        android:text="(MM/dd/yyyy)"
+        android:textSize="18px" />
+
+    <EditText
+        android:id="@+id/birthdayAdd"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/DOBAdd"
+        android:layout_below="@+id/longitudeAdd"
+        android:layout_marginLeft="150dp"
+        android:inputType="date" />
+
+    <!-- Button to cancel -->
+
+    <Button
+        android:id="@+id/cancelAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="400dp"
+        android:text="Cancel" />
+
+    <!-- Button to save -->
+
+    <Button
+        android:id="@+id/saveAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="400dp"
+        android:text="Add" />
+
+</RelativeLayout>

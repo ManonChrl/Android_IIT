@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Notebook</string>
+    <string name="title_activity_person_detail">PersonDetail</string>
+    <string name="title_activity_person_map">PersonMap</string>
+    <string name="title_activity_person_edit">PersonEdit</string>
+    <string name="title_activity_person_delete">PersonDelete</string>
+    <string name="title_activity_person_add">PersonAdd</string>
+
+</resources>
